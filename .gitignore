@@ -2,3 +2,5 @@ main.o
 mains
 libmyBank.a
 myBank.o
+my.txt
+output.txt

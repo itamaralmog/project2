@@ -17,14 +17,14 @@ int main()
    while (running)
    {
       printf("\nplease choose a transaction type:\n");
-      printf("O-Open Acount\n");
-      printf("B-Balance Inquiry\n");
-      printf("D-Deposit\n");
-      printf("Withdrawal\n");
-      printf("C-Close Account\n");
-      printf("I-Interest\n");
-      printf("P-Print\n");
-      printf("E-Exit\n");
+      printf(" O-Open Account\n");
+      printf(" B-Balance Inquiry\n");
+      printf(" D-Deposit\n");
+      printf(" W-Withdrawal\n");
+      printf(" C-Close Account\n");
+      printf(" I-Interest\n");
+      printf(" P-Print\n");
+      printf(" E-Exit\n");
 
       char c = 0;
       if (scanf(" %c", &c) != 1)
@@ -59,7 +59,7 @@ int main()
          running = false;
          break;
       default:
-         printf("Invalid transaction type");
+         printf("Invalid transaction type\n");
          break;
       }
    }
