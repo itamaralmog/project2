@@ -16,7 +16,7 @@ int main()
    }
    while (running)
    {
-      printf("\nplease choose a transaction type:\n");
+      printf("\nPlease choose a transaction type:\n");
       printf(" O-Open Account\n");     
       printf(" B-Balance Inquiry\n");
       printf(" D-Deposit\n");
@@ -62,6 +62,7 @@ int main()
          printf("Invalid transaction type\n");
          break;
       }
+     // printf("\n");
    }
    return 0;
 }

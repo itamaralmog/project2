@@ -11,14 +11,14 @@ void openAccount(double account[2][50])
    }
    if (empty == -1)
    {
-      printf(" there isnt room\n");
+      printf(" There isnt room\n");
       return;
    }
-   printf(" please enter amount for deposit:");
+   printf("Please enter amount for deposit:");
    double amount = 0;
    if (scanf(" %lf", &amount) != 1)
    {
-      printf(" Faild to read to read the amount");
+      printf(" Failed to read to read the amount");
       printf("\n");
       return;
    }
@@ -31,7 +31,7 @@ void openAccount(double account[2][50])
    account[0][empty] = 1;
    account[1][empty] = amount;
    empty += 901;
-   printf(" New accout number is: %d \n", empty);
+   printf(" New account number is: %d \n", empty);
 }
 
 void balanceInquiry(double account[2][50])
