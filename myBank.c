@@ -31,7 +31,7 @@ void openAccount(double account[2][50])
    account[0][empty] = 1;
    account[1][empty] = amount;
    empty += 901;
-   printf(" New accout number is: %d\n", empty);
+   printf(" New accout number is: %d \n", empty);
 }
 
 void balanceInquiry(double account[2][50])
@@ -58,7 +58,7 @@ void balanceInquiry(double account[2][50])
       }
       else
       {
-         printf("The balance of account number %d is: %.2lf\n", num, account[1][number]);
+         printf(" The balance of account number %d is: %.2lf\n", num, account[1][number]);
          return;
       }
    }
@@ -87,7 +87,7 @@ void deposit(double account[2][50])
       }
       else
       {
-         printf("Please enter the amount to deposit:");
+         printf(" Please enter the amount to deposit:");
          double amount;
          if (scanf(" %lf", &amount) != 1)
          {

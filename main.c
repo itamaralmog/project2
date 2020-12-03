@@ -17,7 +17,7 @@ int main()
    while (running)
    {
       printf("\nplease choose a transaction type:\n");
-      printf(" O-Open Account\n");
+      printf(" O-Open Account\n");     
       printf(" B-Balance Inquiry\n");
       printf(" D-Deposit\n");
       printf(" W-Withdrawal\n");
