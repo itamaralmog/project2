@@ -18,7 +18,7 @@ void openAccount(double account[2][50])
    double amount = 0;
    if (scanf(" %lf", &amount) != 1)
    {
-      printf(" Failed to read to read the amount");
+      printf(" Failed to read the amount");
       printf("\n");
       return;
    }
@@ -139,6 +139,10 @@ void withdrawal(double account[2][50])
             printf(" Failed to read the amount\n");
             return;
          }
+         if(account[1][number]-amount<0){
+            printf(" Cannot withdraw more than the balance\n");
+            return;
+         }
          account[1][number] -= amount;
          printf(" The new balance is: %.2lf\n", account[1][number]);
          return;
@@ -175,11 +179,11 @@ void closeAccount(double account[2][50])
 }
 void interest(double account[2][50])
 {
-   printf("Please enter interest rate:");
+   printf("Please enter interest rate: ");
    int inter;
    if (scanf(" %d", &inter) != 1)
    {
-      printf(" Failed to read the interest rate\n");
+      printf("Failed to read the interest rate\n");
       return;
    }
    if (inter < 0)
@@ -204,7 +208,7 @@ void print(double account[2][50])
    {
       if (account[0][i] == 1)
       {
-         printf(" The balance of account number %d is: %.2lf\n", i + 901, account[1][i]);
+         printf("The balance of account number %d is: %.2lf\n", i + 901, account[1][i]);
       }
    }
    return;
